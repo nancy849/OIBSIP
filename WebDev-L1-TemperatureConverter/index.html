@@ -1,0 +1,55 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="converter">
+        <div class="icon">🌡️</div>
+        <p class="eyebrow">SMART TEMPERATURE TOOL</p>
+        <h1>Temperature Converter</h1>
+        <p class="subtitle">Convert temperatures quickly and easily.</p>
+
+        <form id="converterForm">
+            <label for="temperature">Enter temperature</label>
+            <input
+                type="number"
+                id="temperature"
+                placeholder="e.g. 25"
+                step="any"
+                required
+            >
+
+            <label for="fromUnit">Convert from</label>
+            <select id="fromUnit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+
+            <label for="toUnit">Convert to</label>
+            <select id="toUnit">
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="C">Celsius (°C)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+
+            <button type="submit">Convert Temperature</button>
+        </form>
+
+        <section class="result" aria-live="polite">
+            <p>Your result</p>
+            <h2 id="resultValue">--</h2>
+            <p id="resultMessage">Enter a value to begin.</p>
+        </section>
+
+        <footer>© 2026 Temperature Converter</footer>
+    </main>
+</body>
+</html>
+```
