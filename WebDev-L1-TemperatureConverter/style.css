@@ -1,0 +1,140 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #28213f;
+    background: linear-gradient(135deg, #eee8ff, #f8f7ff, #e4f2ff);
+}
+
+.converter {
+    width: 100%;
+    max-width: 460px;
+    padding: 35px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 20px 60px rgba(57, 38, 100, 0.12);
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.eyebrow {
+    color: #7950ed;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #777186;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 18px;
+    border: 1px solid #e1dcef;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #28213f;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    border-color: #7950ed;
+    box-shadow: 0 0 0 3px #eee8ff;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #7950ed;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #5c35cc;
+    transform: translateY(-1px);
+}
+
+.result {
+    margin-top: 25px;
+    padding: 22px;
+    text-align: center;
+    border-radius: 13px;
+    background: #f5f1ff;
+}
+
+.result p {
+    color: #716b80;
+    font-size: 13px;
+}
+
+.result h2 {
+    color: #7048e8;
+    font-size: 32px;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #8a8499;
+    font-size: 11px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .converter {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+```
